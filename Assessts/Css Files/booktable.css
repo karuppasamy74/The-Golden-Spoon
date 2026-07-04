@@ -1,0 +1,1739 @@
+/* Inter Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width:90%;
+    margin: auto;
+}
+/* Top Navigation Tab Style */
+.Navigation{
+    display: flex;
+    background-color: whitesmoke;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    padding: 15px 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    flex-wrap: wrap;
+}
+.Navigation:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.logo img{
+    width: 60px;
+    height: 60px;
+}
+.logo h4{
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #BB2F4E;
+}
+.navlinks{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.navlinks a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-family: "Inter", sans-serif;
+    font-weight: bolder;
+}
+.navlinks a:hover{
+    color: #BB2F4E;
+}
+.navlinks img{
+    width: 60px;
+    height: 60px;
+}
+
+/* Info Section Style */
+.Info{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.info-left{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.info-left h1{
+    font-family: "Inter", sans-serif;
+    font-size:2.5rem;
+    font-weight: bold;
+    color: #BB2F4E;
+}
+.info-left p{
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    padding: 5px;
+    padding-left: 10px;
+}
+.info-left h2{
+    font-family: "Inter", sans-serif;
+    font-size:1.5rem;
+    font-weight: bold;
+    color: #BB2F4E;
+}
+.info-right{
+    margin-top:20px;
+}
+.info-right img{
+    height: 200px;
+    width: 350px;
+    border-radius: 10px;
+}
+/* Info Section Animation */
+.Info{
+    animation: fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Table Reservation Form */
+
+.tablereservationform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background: #f8f8f8;
+}
+
+.tablereservationform form{
+    width: 100%;
+    max-width: 600px;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.tablereservationform label{
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #BB2F4E;
+}
+
+.tablereservationform input,
+.tablereservationform textarea{
+    width: 100%;
+    padding: 12px 15px;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    outline: none;
+    transition: all .3s ease;
+}
+
+.tablereservationform input:focus,
+.tablereservationform textarea:focus{
+    border-color: #BB2F4E;
+    box-shadow: 0 0 8px rgba(187,47,78,.25);
+}
+
+.tablereservationform textarea{
+    resize: none;
+    min-height: 120px;
+}
+
+.tablereservationform button{
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+/* Confirm Button */
+button[type="submit"]{
+    background: #BB2F4E;
+    color: white;
+}
+
+button[type="submit"]:hover{
+    color: #9f223f;
+    background-color: white;
+}
+
+/* Reset Button */
+button[type="reset"]{
+    background: #ececec;
+    color: #333;
+}
+
+button[type="reset"]:hover{
+    background: #d8d8d8;
+}
+
+/* View Menu Button */
+.tablereservationform a{
+    text-decoration: none;
+    text-align: center;
+    background: transparent;
+    border: 2px solid #BB2F4E;
+    color: #BB2F4E;
+    padding: 13px;
+    border-radius: 10px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    transition: .3s ease;
+}
+
+.tablereservationform a:hover{
+    background: #BB2F4E;
+    color: white;
+}
+.form-buttons{
+    display: flex;
+    gap: 15px;
+}
+
+.form-buttons button{
+    flex: 1;
+}
+.tablereservationform select{
+    width: 100%;
+    padding: 12px 15px;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    outline: none;
+    transition: all .3s ease;
+    background: white;
+}
+
+.tablereservationform select:focus{
+    border-color: #BB2F4E;
+    box-shadow: 0 0 8px rgba(187,47,78,.25);
+}
+textarea::placeholder{
+    font-family: "Inter", sans-serif;
+    color: #999;
+    font-style: italic;
+}
+
+/* Reservation Guidelines */
+
+.reservation-guidelines{
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+}
+
+.guidelines-container{
+    max-width: 700px;
+    margin: auto;
+    background: #ffffff;
+    padding: 35px 40px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.guidelines-container h2{
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    color: #BB2F4E;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.guidelines-container ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.guidelines-container li{
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 18px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #444;
+}
+
+.guidelines-container li::before{
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: #BB2F4E;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.guidelines-container strong{
+    color: #BB2F4E;
+}
+/* Footer Section Css Tab Style */
+
+.homefooter{
+    width: 100%;
+    background: #d69595;
+    margin-top: 200px;
+    padding: 70px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 60px;
+    box-sizing: border-box;
+}
+
+.footercol1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2px;
+    flex: 1;
+    min-width: 230px;
+}
+
+.footercol1 img{
+    width: 65px;
+}
+
+.footercol1 h4{
+    font-size: 20px;
+    color: #a21414;
+    font-weight: 600;
+    font-family: serif;
+}
+
+.footercol2,
+.footercol3{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    flex: 1;
+    min-width: 170px;
+}
+
+.footercol2 a,
+.footercol3 a{
+    text-decoration: none;
+    color: #000;
+    font-size: 22px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.footercol2 a:hover,
+.footercol3 a:hover{
+    color: white;
+}
+.footercol4{
+    flex: 1.4;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-width: 380px;
+}
+
+.footercol4 input{
+    width: 420px;
+    height: 55px;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    font-size: 18px;
+    background: #fff;
+}
+
+.footercol4 button{
+    width: 140px;
+    height: 55px;
+    border: none;
+    background: #1d5de3;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.footercol4 button:hover{
+    color: #003cb8;
+    background-color: white;
+}
+
+/* Media Query For Top Naviggation */
+
+/* Mobile (320px, 375px, 425px) */
+
+/* Mobile */
+@media (max-width:425px){
+
+    .Navigation{
+        width:80%;
+        margin:20px auto;
+        padding:20px;
+
+        display:grid;
+        grid-template-columns:1fr auto;
+        grid-template-areas:
+            "logo user"
+            "nav nav";
+
+        row-gap:25px;
+        align-items:start;
+    }
+
+    .logo{
+        grid-area:logo;
+        gap:10px;
+    }
+
+    .logo img{
+        width:45px;
+        height:45px;
+    }
+
+    .logo h4{
+        font-size:22px;
+    }
+
+    .navlinks{
+        grid-area:nav;
+        display:flex;
+        flex-direction:column;
+        align-items:flex-start;
+        gap:18px;
+    }
+
+    .navlinks a{
+        font-size:16px;
+    }
+
+    .userimage{
+        width:45px;
+        height:45px;
+        justify-self:end;
+    }
+
+}
+
+/* Tablet (426px–768px) */
+
+@media (min-width:426px) and (max-width:768px){
+
+    .Navigation{
+        width:80%;
+        margin:25px auto;
+        padding:25px 30px;
+
+        display:grid;
+        grid-template-columns:1fr auto;
+        grid-template-areas:
+            "logo user"
+            "nav nav";
+
+        row-gap:30px;
+        align-items:start;
+    }
+
+    .logo{
+        grid-area:logo;
+        gap:15px;
+    }
+
+    .logo img{
+        width:60px;
+        height:60px;
+    }
+
+    .logo h4{
+        font-size:30px;
+    }
+
+    .navlinks{
+        grid-area:nav;
+        display:flex;
+        flex-direction:column;
+        align-items:flex-start;
+        gap:22px;
+    }
+
+    .navlinks a{
+        font-size:20px;
+    }
+
+    .userimage{
+        width:60px;
+        height:60px;
+    }
+
+}
+/* ==========================================
+   Laptop (1024px - 1440px)
+========================================== */
+
+@media (min-width:1024px) and (max-width:1440px){
+
+    .Navigation{
+        width:95%;
+        margin:20px auto;
+        padding:15px 25px;
+
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        flex-wrap:nowrap;
+    }
+
+    .logo{
+        display:flex;
+        align-items:center;
+        gap:10px;
+        flex-shrink:0;
+    }
+
+    .logo img{
+        width:55px;
+        height:55px;
+    }
+
+    .logo h4{
+        font-size:28px;
+        white-space:nowrap;
+    }
+
+    .navlinks{
+        display:flex;
+        align-items:center;
+        gap:28px;
+        flex-wrap:nowrap;
+        margin-left:auto;
+    }
+
+    .navlinks a{
+        font-size:20px;
+        white-space:nowrap;
+    }
+
+    .navlinks img{
+        width:50px;
+        height:50px;
+        flex-shrink:0;
+    }
+
+}
+/* ==========================================
+   Large Desktop (1441px - 2559px)
+========================================== */
+
+@media (min-width:1441px) and (max-width:2559px){
+
+    .Navigation{
+        width:90%;
+        margin:30px auto;
+        margin: 50px;
+        padding:22px 50px;
+
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        flex-wrap:nowrap;        /* Prevent wrapping */
+    }
+
+    .logo{
+        display:flex;
+        align-items:center;
+        gap:18px;
+        flex-shrink:0;
+    }
+
+    .logo img{
+        width:80px;
+        height:80px;
+    }
+
+    .logo h4{
+        font-size:40px;
+        white-space:nowrap;
+    }
+
+    .navlinks{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        gap:50px;
+        flex:1;
+    }
+
+    .navlinks a{
+        font-size:24px;
+        white-space:nowrap;
+    }
+
+    .navlinks img{
+        width:75px;
+        height:75px;
+        flex-shrink:0;
+    }
+
+}
+/* 4K (2560px and Above) */
+
+@media (min-width:2560px){
+
+    .Navigation{
+        width:90%;
+        margin:40px auto;
+        padding:35px 70px;
+        border-radius:35px;
+    }
+
+    .logo{
+        gap:25px;
+    }
+
+    .logo img{
+        width:110px;
+        height:110px;
+    }
+
+    .logo h4{
+        font-size:54px;
+    }
+
+    .navlinks{
+        gap:90px;
+    }
+
+    .navlinks a{
+        font-size:34px;
+    }
+
+    .navlinks img{
+        width:100px;
+        height:100px;
+    }
+
+}
+
+/* ==========================================
+   Mobile Small (320px - 374px)
+========================================== */
+
+@media (max-width:374px){
+
+    .Info{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        gap:25px;
+        margin:20px auto;
+    }
+
+    .info-left{
+        margin:0;
+        width:85%;
+    }
+
+    .info-left h1{
+        font-size:2rem;
+    }
+
+    .info-left h2{
+        font-size:1.4rem;
+        margin-top:15px;
+    }
+
+    .info-left p{
+        font-size:15px;
+        line-height:1.6;
+        padding:8px 0;
+    }
+
+    .info-right{
+        margin:0;
+    }
+
+    .info-right img{
+        width:260px;
+        height:170px;
+    }
+
+}
+
+
+/* ==========================================
+   Mobile Medium (375px - 424px)
+========================================== */
+
+@media (min-width:375px) and (max-width:424px){
+
+    .Info{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        gap:30px;
+    }
+
+    .info-left{
+        margin:0;
+        width:85%;
+    }
+
+    .info-left h1{
+        font-size:2.2rem;
+    }
+
+    .info-left h2{
+        font-size:1.5rem;
+    }
+
+    .info-left p{
+        font-size:16px;
+        line-height:1.7;
+    }
+
+    .info-right{
+        margin:0;
+    }
+
+    .info-right img{
+        width:300px;
+        height:190px;
+    }
+
+}
+
+
+/* ==========================================
+   Mobile Large (425px)
+========================================== */
+
+@media (min-width:425px) and (max-width:425px){
+
+    .Info{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        gap:35px;
+    }
+
+    .info-left{
+        margin:0;
+        width:85%;
+    }
+
+    .info-left h1{
+        font-size:2.4rem;
+    }
+
+    .info-left h2{
+        font-size:1.6rem;
+    }
+
+    .info-left p{
+        font-size:17px;
+        line-height:1.7;
+    }
+
+    .info-right{
+        margin:0;
+    }
+
+    .info-right img{
+        width:340px;
+        height:220px;
+    }
+
+}
+
+
+/* ==========================================
+   Tablet (426px - 768px)
+========================================== */
+
+@media (min-width:426px) and (max-width:768px){
+
+    .Info{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        gap:40px;
+    }
+
+    .info-left{
+        margin:0;
+        width:80%;
+    }
+
+    .info-left h1{
+        font-size:2.8rem;
+    }
+
+    .info-left h2{
+        font-size:2rem;
+    }
+
+    .info-left p{
+        font-size:18px;
+        line-height:1.8;
+    }
+
+    .info-right{
+        margin:0;
+    }
+
+    .info-right img{
+        width:450px;
+        height:280px;
+        border-radius:15px;
+    }
+
+}
+
+
+/* ==========================================
+   Laptop (1024px - 1440px)
+========================================== */
+
+@media (min-width:1024px) and (max-width:1440px){
+
+    .Info{
+        display:flex;
+        justify-content:space-evenly;
+        align-items:center;
+        gap:50px;
+    }
+
+    .info-left{
+        margin:40px;
+    }
+
+    .info-left h1{
+        font-size:3rem;
+    }
+
+    .info-left h2{
+        font-size:2rem;
+    }
+
+    .info-left p{
+        font-size:18px;
+        line-height:1.8;
+    }
+
+    .info-right img{
+        width:420px;
+        height:250px;
+    }
+
+}
+
+
+/* ==========================================
+   Large Desktop (1441px - 2559px)
+========================================== */
+
+@media (min-width:1441px) and (max-width:2559px){
+
+    .Info{
+        gap:70px;
+        align-items:center;
+    }
+
+    .info-left{
+        margin-top:70px;
+        margin-left:70px;
+    }
+
+    .info-left h1{
+        font-size:4rem;
+    }
+
+    .info-left h2{
+        font-size:2.7rem;
+    }
+
+    .info-left p{
+        font-size:22px;
+        line-height:2;
+    }
+
+    .info-right img{
+        width:550px;
+        height:330px;
+        border-radius:18px;
+    }
+
+}
+
+
+/* ==========================================
+   4K (2560px and Above)
+========================================== */
+
+@media (min-width:2560px){
+
+    .Info{
+        gap:100px;
+        align-items:center;
+    }
+
+    .info-left{
+        margin-top:90px;
+        margin-left:90px;
+    }
+
+    .info-left h1{
+        font-size:5rem;
+    }
+
+    .info-left h2{
+        font-size:3.5rem;
+    }
+
+    .info-left p{
+        font-size:30px;
+        line-height:2.2;
+    }
+
+    .info-right img{
+        width:700px;
+        height:430px;
+        border-radius:22px;
+    }
+
+}
+
+/* ==========================================
+   Mobile Small (320px - 374px)
+========================================== */
+
+@media (max-width:374px){
+
+    .tablereservationform{
+        padding:30px 10px;
+    }
+
+    .tablereservationform form{
+        width:90%;
+        padding:20px;
+        border-radius:12px;
+    }
+
+    .tablereservationform label{
+        font-size:14px;
+    }
+
+    .tablereservationform input,
+    .tablereservationform select,
+    .tablereservationform textarea{
+        padding:10px;
+        font-size:14px;
+    }
+
+    .tablereservationform textarea{
+        min-height:100px;
+    }
+
+    .tablereservationform button,
+    .tablereservationform a{
+        font-size:14px;
+        padding:10px;
+    }
+
+    .form-buttons{
+        gap:10px;
+    }
+
+}
+
+
+/* ==========================================
+   Mobile Medium (375px - 424px)
+========================================== */
+
+@media (min-width:375px) and (max-width:424px){
+
+    .tablereservationform{
+        padding:35px 15px;
+    }
+
+    .tablereservationform form{
+        width:90%;
+        padding:25px;
+    }
+
+    .tablereservationform label{
+        font-size:15px;
+    }
+
+    .tablereservationform input,
+    .tablereservationform select,
+    .tablereservationform textarea{
+        padding:11px;
+        font-size:15px;
+    }
+
+    .tablereservationform textarea{
+        min-height:110px;
+    }
+
+    .tablereservationform button,
+    .tablereservationform a{
+        padding:12px;
+        font-size:15px;
+    }
+
+}
+
+
+/* ==========================================
+   Mobile Large (425px)
+========================================== */
+
+@media (min-width:425px) and (max-width:425px){
+
+    .tablereservationform{
+        padding:40px 20px;
+    }
+
+    .tablereservationform form{
+        width:90%;
+        padding:28px;
+    }
+
+    .tablereservationform label{
+        font-size:16px;
+    }
+
+    .tablereservationform input,
+    .tablereservationform select,
+    .tablereservationform textarea{
+        padding:12px;
+        font-size:16px;
+    }
+
+    .tablereservationform textarea{
+        min-height:120px;
+    }
+
+    .tablereservationform button,
+    .tablereservationform a{
+        padding:13px;
+        font-size:16px;
+    }
+
+}
+
+
+/* ==========================================
+   Tablet (426px - 768px)
+========================================== */
+
+@media (min-width:426px) and (max-width:768px){
+
+    .tablereservationform{
+        padding:50px 25px;
+    }
+
+    .tablereservationform form{
+        width:85%;
+        max-width:650px;
+        padding:35px;
+    }
+
+    .tablereservationform label{
+        font-size:18px;
+    }
+
+    .tablereservationform input,
+    .tablereservationform select,
+    .tablereservationform textarea{
+        padding:14px;
+        font-size:17px;
+    }
+
+    .tablereservationform textarea{
+        min-height:140px;
+    }
+
+    .tablereservationform button,
+    .tablereservationform a{
+        padding:15px;
+        font-size:17px;
+    }
+
+}
+
+
+/* ==========================================
+   Laptop (1024px - 1440px)
+========================================== */
+
+@media (min-width:1024px) and (max-width:1440px){
+
+    .tablereservationform{
+        padding:60px 30px;
+    }
+
+    .tablereservationform form{
+        max-width:650px;
+        padding:40px;
+    }
+
+    .tablereservationform label{
+        font-size:17px;
+    }
+
+    .tablereservationform input,
+    .tablereservationform select,
+    .tablereservationform textarea{
+        padding:14px;
+        font-size:16px;
+    }
+
+    .tablereservationform textarea{
+        min-height:140px;
+    }
+
+    .tablereservationform button,
+    .tablereservationform a{
+        padding:15px;
+        font-size:17px;
+    }
+
+}
+
+
+/* ==========================================
+   Large Desktop (1441px - 2559px)
+========================================== */
+
+@media (min-width:1441px) and (max-width:2559px){
+
+    .tablereservationform{
+        padding:80px 40px;
+    }
+
+    .tablereservationform form{
+        max-width:850px;
+        padding:50px;
+        border-radius:22px;
+    }
+
+    .tablereservationform label{
+        font-size:22px;
+    }
+
+    .tablereservationform input,
+    .tablereservationform select,
+    .tablereservationform textarea{
+        padding:18px;
+        font-size:20px;
+    }
+
+    .tablereservationform textarea{
+        min-height:180px;
+    }
+
+    .tablereservationform button,
+    .tablereservationform a{
+        padding:18px;
+        font-size:20px;
+    }
+
+}
+
+
+/* ==========================================
+   4K (2560px and Above)
+========================================== */
+
+@media (min-width:2560px){
+
+    .tablereservationform{
+        padding:100px 50px;
+    }
+
+    .tablereservationform form{
+        max-width:1000px;
+        padding:60px;
+        border-radius:25px;
+    }
+
+    .tablereservationform label{
+        font-size:28px;
+    }
+
+    .tablereservationform input,
+    .tablereservationform select,
+    .tablereservationform textarea{
+        padding:22px;
+        font-size:26px;
+    }
+
+    .tablereservationform textarea{
+        min-height:220px;
+    }
+
+    .tablereservationform button,
+    .tablereservationform a{
+        padding:22px;
+        font-size:26px;
+    }
+
+}
+
+/* ==========================================
+   Mobile Small (320px - 374px)
+========================================== */
+
+@media (max-width:374px){
+
+    .reservation-guidelines{
+        padding:35px 10px;
+    }
+
+    .guidelines-container{
+        width:90%;
+        padding:20px;
+        border-radius:12px;
+    }
+
+    .guidelines-container h2{
+        font-size:1.5rem;
+        margin-bottom:20px;
+    }
+
+    .guidelines-container li{
+        padding-left:25px;
+        font-size:14px;
+        line-height:1.6;
+        margin-bottom:15px;
+    }
+
+    .guidelines-container li::before{
+        font-size:16px;
+    }
+
+}
+
+
+/* ==========================================
+   Mobile Medium (375px - 424px)
+========================================== */
+
+@media (min-width:375px) and (max-width:424px){
+
+    .reservation-guidelines{
+        padding:40px 15px;
+    }
+
+    .guidelines-container{
+        width:90%;
+        padding:25px;
+    }
+
+    .guidelines-container h2{
+        font-size:1.7rem;
+    }
+
+    .guidelines-container li{
+        padding-left:28px;
+        font-size:15px;
+        line-height:1.7;
+    }
+
+    .guidelines-container li::before{
+        font-size:17px;
+    }
+
+}
+
+
+/* ==========================================
+   Mobile Large (425px)
+========================================== */
+
+@media (width:425px){
+
+    .reservation-guidelines{
+        padding:45px 20px;
+    }
+
+    .guidelines-container{
+        width:90%;
+        padding:30px;
+    }
+
+    .guidelines-container h2{
+        font-size:1.9rem;
+    }
+
+    .guidelines-container li{
+        padding-left:30px;
+        font-size:16px;
+        line-height:1.8;
+    }
+
+    .guidelines-container li::before{
+        font-size:18px;
+    }
+
+}
+
+
+/* ==========================================
+   Tablet (426px - 768px)
+========================================== */
+
+@media (min-width:426px) and (max-width:768px){
+
+    .reservation-guidelines{
+        padding:50px 25px;
+    }
+
+    .guidelines-container{
+        width:85%;
+        max-width:750px;
+        padding:35px;
+    }
+
+    .guidelines-container h2{
+        font-size:2.2rem;
+    }
+
+    .guidelines-container li{
+        padding-left:32px;
+        font-size:18px;
+        line-height:1.9;
+    }
+
+    .guidelines-container li::before{
+        font-size:20px;
+    }
+
+}
+
+
+/* ==========================================
+   Laptop (1024px - 1440px)
+========================================== */
+
+@media (min-width:1024px) and (max-width:1440px){
+
+    .guidelines-container{
+        max-width:750px;
+        padding:40px;
+    }
+
+    .guidelines-container h2{
+        font-size:2.3rem;
+    }
+
+    .guidelines-container li{
+        padding-left:35px;
+        font-size:17px;
+        line-height:1.9;
+    }
+
+    .guidelines-container li::before{
+        font-size:20px;
+    }
+
+}
+
+
+/* ==========================================
+   Large Desktop (1441px - 2559px)
+========================================== */
+
+@media (min-width:1441px) and (max-width:2559px){
+
+    .reservation-guidelines{
+        padding:80px 40px;
+    }
+
+    .guidelines-container{
+        max-width:950px;
+        padding:50px 60px;
+        border-radius:22px;
+    }
+
+    .guidelines-container h2{
+        font-size:3rem;
+        margin-bottom:35px;
+    }
+
+    .guidelines-container li{
+        padding-left:40px;
+        font-size:24px;
+        line-height:2;
+        margin-bottom:24px;
+    }
+
+    .guidelines-container li::before{
+        font-size:26px;
+    }
+
+}
+
+
+/* ==========================================
+   4K (2560px and Above)
+========================================== */
+
+@media (min-width:2560px){
+
+    .reservation-guidelines{
+        padding:100px 50px;
+    }
+
+    .guidelines-container{
+        max-width:1200px;
+        padding:70px;
+        border-radius:28px;
+    }
+
+    .guidelines-container h2{
+        font-size:4rem;
+        margin-bottom:45px;
+    }
+
+    .guidelines-container li{
+        padding-left:50px;
+        font-size:30px;
+        line-height:2.2;
+        margin-bottom:30px;
+    }
+
+    .guidelines-container li::before{
+        font-size:34px;
+    }
+
+}
+
+/* media Query for  Footer Section*/
+
+/* Mobile Small (320px) */
+
+@media (max-width:320px){
+
+    .homefooter{
+        width:100%;
+        padding:40px 20px;
+        margin-top:100px;
+
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:30px;
+        text-align:center;
+    }
+
+    .footercol1,
+    .footercol2,
+    .footercol3,
+    .footercol4{
+        width:100%;
+        min-width:0;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .footercol1 img{
+        width:55px;
+    }
+
+    .footercol1 h4{
+        font-size:18px;
+    }
+
+    .footercol2,
+    .footercol3{
+        gap:18px;
+    }
+
+    .footercol2 a,
+    .footercol3 a{
+        font-size:18px;
+    }
+
+    .footercol4{
+        flex-direction:column;
+        gap:12px;
+    }
+
+    .footercol4 input{
+        width:100%;
+        height:45px;
+        font-size:15px;
+    }
+
+    .footercol4 button{
+        width:100%;
+        height:45px;
+        font-size:15px;
+    }
+
+}
+
+/* Mobile Medium (375px) */
+
+@media (min-width:321px) and (max-width:375px){
+
+    .homefooter{
+        padding:45px 25px;
+        margin-top:120px;
+
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:35px;
+        text-align:center;
+    }
+
+    .footercol1,
+    .footercol2,
+    .footercol3,
+    .footercol4{
+        width:100%;
+        min-width:0;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .footercol1 img{
+        width:60px;
+    }
+
+    .footercol1 h4{
+        font-size:20px;
+    }
+
+    .footercol2 a,
+    .footercol3 a{
+        font-size:20px;
+    }
+
+    .footercol4{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .footercol4 input,
+    .footercol4 button{
+        width:100%;
+        height:48px;
+    }
+
+}
+
+/* Mobile Large (425px) */
+
+@media (min-width:376px) and (max-width:425px){
+
+    .homefooter{
+        padding:50px 30px;
+        margin-top:130px;
+
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:40px;
+        text-align:center;
+    }
+
+    .footercol1,
+    .footercol2,
+    .footercol3,
+    .footercol4{
+        width:100%;
+        min-width:0;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .footercol1 img{
+        width:65px;
+    }
+
+    .footercol1 h4{
+        font-size:22px;
+    }
+
+    .footercol2 a,
+    .footercol3 a{
+        font-size:21px;
+    }
+
+    .footercol4{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .footercol4 input,
+    .footercol4 button{
+        width:100%;
+        height:50px;
+    }
+
+}
+
+/* Tablet (426px - 768px) */
+
+@media (min-width:426px) and (max-width:768px){
+
+    .homefooter{
+        padding:60px 40px;
+        margin-top:150px;
+
+        display:grid;
+        grid-template-columns:1fr;
+        row-gap:35px;
+        justify-items:center;
+        text-align:center;
+    }
+
+    .footercol1{
+        justify-content:center;
+        align-items:center;
+        width:100%;
+    }
+
+    .footercol2,
+    .footercol3{
+        align-items:center;
+        gap:20px;
+        width:100%;
+    }
+
+    .footercol2 a,
+    .footercol3 a{
+        font-size:22px;
+    }
+
+    .footercol4{
+        width:100%;
+        min-width:0;
+        display:flex;
+        justify-content:center;
+    }
+
+    .footercol4 input{
+        width:70%;
+        height:50px;
+    }
+
+    .footercol4 button{
+        width:120px;
+        height:50px;
+    }
+
+}
+
+/* Large Desktop (1441px - 2559px) */
+
+@media (min-width:1441px) and (max-width:2559px){
+
+    .homefooter{
+        padding:90px 120px;
+        gap:80px;
+    }
+
+    .footercol1 img{
+        width:85px;
+    }
+
+    .footercol1 h4{
+        font-size:30px;
+    }
+
+    .footercol2 a,
+    .footercol3 a{
+        font-size:28px;
+    }
+
+    .footercol4 input{
+        width:520px;
+        height:65px;
+        font-size:22px;
+    }
+
+    .footercol4 button{
+        width:170px;
+        height:65px;
+        font-size:22px;
+    }
+
+}
+
+/* 4K (2560px and Above) */
+@media (min-width:2560px){
+
+    .homefooter{
+        padding:120px 180px;
+        gap:100px;
+    }
+
+    .footercol1 img{
+        width:120px;
+    }
+
+    .footercol1 h4{
+        font-size:42px;
+    }
+
+    .footercol2 a,
+    .footercol3 a{
+        font-size:36px;
+    }
+
+    .footercol4 input{
+        width:700px;
+        height:85px;
+        font-size:30px;
+    }
+
+    .footercol4 button{
+        width:220px;
+        height:85px;
+        font-size:30px;
+    }
+
+}

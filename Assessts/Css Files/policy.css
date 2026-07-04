@@ -1,0 +1,275 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    width:90%;
+    margin: auto;
+}
+
+body{
+    background:#f8f8f8;
+    color:#333;
+}
+
+.container{
+    max-width:900px;
+    margin:60px auto;
+    background:#fff;
+    padding:50px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+h1{
+    text-align:center;
+    color:#8B0000;
+    margin-bottom:35px;
+    font-size:40px;
+}
+
+h2{
+    color:#b22222;
+    margin-top:30px;
+    margin-bottom:12px;
+}
+
+p{
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+ul{
+    margin-left:25px;
+    margin-bottom:20px;
+}
+
+li{
+    font-size:18px;
+    line-height:1.8;
+}
+
+@media(max-width:768px){
+
+.container{
+    width:90%;
+    padding:30px;
+}
+
+h1{
+    font-size:32px;
+}
+
+p,li{
+    font-size:16px;
+}
+
+}
+
+/* ==========================================
+   Mobile Small (320px - 374px)
+========================================== */
+
+@media (max-width:374px){
+
+    body{
+        width:100%;
+    }
+
+    .container{
+        width:92%;
+        margin:20px auto;
+        padding:20px;
+        border-radius:10px;
+    }
+
+    h1{
+        font-size:26px;
+        margin-bottom:25px;
+    }
+
+    h2{
+        font-size:20px;
+        margin-top:22px;
+        margin-bottom:10px;
+    }
+
+    p,
+    li{
+        font-size:15px;
+        line-height:1.7;
+    }
+
+    ul{
+        margin-left:20px;
+    }
+
+}
+
+
+/* ==========================================
+   Mobile Medium (375px - 424px)
+========================================== */
+
+@media (min-width:375px) and (max-width:424px){
+
+    body{
+        width:100%;
+    }
+
+    .container{
+        width:90%;
+        margin:25px auto;
+        padding:25px;
+    }
+
+    h1{
+        font-size:30px;
+    }
+
+    h2{
+        font-size:22px;
+    }
+
+    p,
+    li{
+        font-size:16px;
+        line-height:1.8;
+    }
+
+}
+
+
+/* ==========================================
+   Mobile Large (425px)
+========================================== */
+
+@media (width:425px){
+
+    body{
+        width:100%;
+    }
+
+    .container{
+        width:90%;
+        margin:30px auto;
+        padding:28px;
+    }
+
+    h1{
+        font-size:32px;
+    }
+
+    h2{
+        font-size:24px;
+    }
+
+    p,
+    li{
+        font-size:17px;
+    }
+
+}
+
+
+/* ==========================================
+   Tablet (426px - 768px)
+========================================== */
+
+@media (min-width:426px) and (max-width:768px){
+
+    .container{
+        width:88%;
+        padding:35px;
+    }
+
+    h1{
+        font-size:36px;
+    }
+
+    h2{
+        font-size:26px;
+    }
+
+    p,
+    li{
+        font-size:18px;
+        line-height:1.9;
+    }
+
+}
+
+
+/* ==========================================
+   Laptop (1024px - 1440px)
+========================================== */
+
+@media (min-width:1024px) and (max-width:1440px){
+
+    .container{
+        max-width:900px;
+        padding:50px;
+    }
+
+}
+
+
+/* ==========================================
+   Large Desktop (1441px - 2559px)
+========================================== */
+
+@media (min-width:1441px) and (max-width:2559px){
+
+    .container{
+        max-width:1200px;
+        padding:70px;
+        border-radius:18px;
+    }
+
+    h1{
+        font-size:56px;
+    }
+
+    h2{
+        font-size:34px;
+    }
+
+    p,
+    li{
+        font-size:24px;
+        line-height:2;
+    }
+
+}
+
+
+/* ==========================================
+   4K (2560px and Above)
+========================================== */
+
+@media (min-width:2560px){
+
+    .container{
+        max-width:1600px;
+        padding:90px;
+        border-radius:22px;
+    }
+
+    h1{
+        font-size:72px;
+    }
+
+    h2{
+        font-size:44px;
+    }
+
+    p,
+    li{
+        font-size:32px;
+        line-height:2.2;
+    }
+
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Golden Spoon Restaurant</title>
+    <!-- Tab Icon Link -->
+    <link rel="icon" href="./Assessts/Images/IconTab2.png">
+    <!-- BookTable Page Style Sheet Link -->
+    <link rel="stylesheet" href="./Assessts/Css Files/booktable.css">
+</head>
+
+<body>
+    <Section>
+        <div class="Navigation">
+            <div class="logo">
+                <img src="./Assessts/Images/Icon_Tab_2removedbg.png" alt="Restaurant icon">
+                <h4>The Golden Spoon</h4>
+            </div>
+            <div class="navlinks">
+                <a href="./Index.html">Home</a>
+                <a href="./menu.html">Menu</a>
+                <a href="./booktable.html">Book Table</a>
+                <a href="./contact.html">Contact Us</a>
+                <img class="userimage" src="./Assessts/Images/User_img.png" alt="UserImage">
+            </div>
+        </div>
+    </Section>
+    <section>
+        <div class="Info">
+            <div class="info-left">
+                <h1>Table Reservation</h1>
+                <p>
+                    Reserve your table for an unforgettable dining experience.
+                </p>
+                <h2>Reserve your table</h2>
+                <p>
+                    Please fill out the from below to book your table. We look forward to Welcoming you!
+                </p>
+            </div>
+            <div class="info-right">
+                <img src="./Assessts/Images/Dining.png" alt="Dining Table Image">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="tablereservationform">
+            <form action="">
+                <label for="Date">Date</label>
+                <input type="date" name="date" placeholder="Select Date">
+                <label for="time">Time</label>
+                <select id="time" name="time" required>
+                    <option value="" selected disabled>Select Time</option>
+                    <option value="12:00 PM">12:00 PM</option>
+                    <option value="2:00 PM">2:00 PM</option>
+                    <option value="6:00 PM">6:00 PM</option>
+                    <option value="8:00 PM">8:00 PM</option>
+                </select>
+                <label for="No_0f_Guest">Number Of Guest</label>
+                <input type="number" max="16" min="2" placeholder="Enter Number Of Guest">
+                <label for="Reservation Name">Reservation Name</label>
+                <input type="text" name="Reservation Name"
+                    placeholder="Enter the name of the person making the reservation">
+                <label for="number">Contact Number</label>
+                <input type="tel" name="phonenumber" placeholder="Enter your contact number" max="10">
+                <label for="email">Email Address (Optional)</label>
+                <input type="email" name="email" placeholder="Enter Your Email Address">
+                <label for="spl_request">Special Request</label>
+                <textarea name="spl_request" id="splrequest"
+                    placeholder="Eg: Window seat, birthday celebration, anniversary dinner, or dietary requirements."></textarea>
+                <div class="form-buttons">
+                    <button type="submit">Confirm Reservation</button>
+                    <button type="reset">Reset</button>
+                </div>
+                <a href="./menu.html">View Menu</a>
+            </form>
+        </div>
+    </section>
+    <section class="reservation-guidelines">
+        <div class="guidelines-container">
+            <h2>Reservation Guidelines</h2>
+
+            <ul>
+                <li>Please arrive <strong>10–15 minutes</strong> before your reservation time.</li>
+                <li>Reservations will be held for <strong>15 minutes</strong> after the scheduled time.</li>
+                <li>For groups larger than <strong>16 guests</strong>, please contact us directly.</li>
+                <li>Inform us of any <strong>special occasions or dietary requirements</strong> when making your
+                    reservation.</li>
+                <li>Outside food and beverages are <strong>not permitted</strong>.</li>
+                <li>Please treat our staff with <strong>courtesy and respect</strong> to ensure a pleasant environment
+                    for everyone.</li>
+                <li>We encourage guests to keep <strong>mobile phone usage to a minimum</strong> and enjoy quality time
+                    with family and friends.</li>
+                <li>Thank you for helping us create a memorable dining experience for all our guests.</li>
+            </ul>
+
+        </div>
+    </section>
+    <section>
+        <div class="homefooter">
+            <div class="footercol1">
+                <img src="./Assessts/Images/Icon_Tab_2removedbg.png" alt="Bg Removed Logo">
+                <h4>The Golden Spoon</h4>
+            </div>
+            <div class="footercol2">
+                <a href="./Index.html">Home</a>
+                <a href="./menu.html">Menu</a>
+                <a href="./booktable.html">Book Table</a>
+                <a href="./contact.html">Contact Us</a>
+            </div>
+            <div class="footercol3">
+                <a href="./terms.html">Terms & Conditions</a>
+                <a href="./privacy.html">Privacy Policy</a>
+                <a href="./support.html">Support</a>
+            </div>
+            <div class="footercol4">
+                <input type="email" placeholder="Enter Your Mail Address">
+                <button name="footerbtnsubmit">Submit</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
